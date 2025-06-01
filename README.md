@@ -15,3 +15,14 @@ Image file pre-processing for confocal Z stack time lapses. Configured for .ims 
 **Additional functions**: dftreg3D.m
 
 **Dependencies**: [MATLAB Bioformats](https://www.openmicroscopy.org/bio-formats/downloads/), [Natural-Order Filename Sort](https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort)
+
+
+### Lysis depth analysis:
+
+Identifies lysis events and measures their depth in the biofilm based on whole-biofilm segmentation. Biofilm segmentation can either be performed using the threshold-based method provided, or masks can be loaded that were generated through a separate method (e.g. Cellpose). Lysis events can either be detected using automatic peak finding or, as a verification method, can be manually identified in the provided interactive interface. Lysis depths are compared to a random simulation and results are plotted. 
+
+**Main method**:  getLysisDepths.m
+
+**Additional functions**: biofilmSeg_Threshold.m, lysisCaller_Automated.m, lysisCaller_Interactive.m
+
+**Dependencies**: [MATLAB Bioformats](https://www.openmicroscopy.org/bio-formats/downloads/)
