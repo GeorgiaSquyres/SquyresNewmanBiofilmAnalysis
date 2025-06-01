@@ -17,6 +17,11 @@ Image file pre-processing for confocal Z stack time lapses. Configured for .ims 
 **Dependencies**: [MATLAB Bioformats](https://www.openmicroscopy.org/bio-formats/downloads/), [Natural-Order Filename Sort](https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort)
 
 
+### Biofilm segmentation:
+
+Negative stained biofilms were segmented using [Cellpose-SAM](https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1) following the [documentation](https://cellpose.readthedocs.io/en/latest/). Training was performed using a set of 260 manually annotated images, which are uploaded here as TrainingData.zip. Biofilm segmentation was also performed by thresholding, as described in the next section. 
+
+
 ### Lysis depth analysis:
 
 Identifies lysis events and measures their depth in the biofilm based on whole-biofilm segmentation. Biofilm segmentation can either be performed using the threshold-based method provided, or masks can be loaded that were generated through a separate method (e.g. Cellpose). Lysis events can either be detected using automatic peak finding or, as a verification method, can be manually identified in the provided interactive interface. Lysis depths are compared to a random simulation and results are plotted. 
