@@ -17,7 +17,7 @@ Image file pre-processing for confocal Z stack time lapses. Configured for .ims 
 
 ### Biofilm segmentation:
 
-Negative stained biofilms were segmented using [Cellpose-SAM](https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1) following the [documentation](https://cellpose.readthedocs.io/en/latest/). Training was performed using a set of 260 manually annotated images, which are included here. Biofilm segmentation was also performed by thresholding, as described in the next section. 
+Negative stained biofilms were segmented using [Cellpose-SAM](https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1) following the [documentation](https://cellpose.readthedocs.io/en/latest/). Training was performed using a set of manually annotated images, which are included here. Biofilm segmentation was also performed by thresholding, as described in the next section. 
 
 **Training files**: TrainingData.zip
 
