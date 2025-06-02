@@ -22,7 +22,7 @@ for t = 1:sizeT
     for z = 1:sizeZ
         currImg = filtimg(:,:,z,t);
         thresh = threshes(z).*tCorrection(t);
-        m = currImg<thresh;
+        m = currImg>thresh;
         m(img(:,:,z,t)==0) = 0;
         mask(:,:,z,t) = m;
     end
