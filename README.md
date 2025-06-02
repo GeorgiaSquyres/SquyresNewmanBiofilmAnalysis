@@ -31,5 +31,14 @@ Identifies lysis events and measures their depth in the biofilm based on whole-b
 
 **Dependencies**: [MATLAB Bioformats](https://www.openmicroscopy.org/bio-formats/downloads/)
 
+### Modeling
+
+Models comparing the consequences of patterned cell lysis (cell lysis that follows the experimentally observed probability distribution) with uniform cell lysis (unregulated, probability of cell lysis is equal everywhere). The lysisCoupling models determine how the cumulative amount of cell lysis is coupled to biofilm growth in each case, and the matrixDistribution models determime the final eDNA matrix distribution that results in each case. In both cases, we have included both both a simple 1D model, an equation for each case that captures the underlying principle of these relationships, and a 3D model for comparison to real data. We have also included a visualization of simulated cell lysis events that result from both models. 
+
+**Lysis coupling models**: lysisCoupling1D.m, lysisCoupling3D.m
+
+**eDNA matrix distribution models**: matrixDistribution1D.m, matrixDistribution3D.m
+
+**Model visualization**: viewModels.m
 
 
